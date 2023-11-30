@@ -13,7 +13,7 @@
         $room_number=$_POST['room_number'];
         $phone_no=$_POST['phone_no'];
 
-        $sql="UPDATE `patient_details` SET `Patient_id`='[$patient_id]', `First_name`='[$first_name]',`Last_name`='[$last_name]',`Gender`='[$gender]',`Patient_age`='[$patient_age]',`Address`='[$address]',`Room_number`='[$room_number]',`Phone_no`='[$phone_no]' WHERE patient_id=$patient_id";;
+        $sql="UPDATE `patient_details` SET  `First_name`='[$first_name]',`Last_name`='[$last_name]',`Gender`='[$gender]',`Patient_age`='[$patient_age]',`Address`='[$address]',`Room_number`='[$room_number]',`Phone_no`='[$phone_no]' WHERE patient_id=$patient_id";;
 
         $result = mysqli_query($conn, $sql);
 
